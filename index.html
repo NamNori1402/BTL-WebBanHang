@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link 
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+     />
+       <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title> Nike VN</title>
+
+</head>
+<body style="background-color: #dddddd;font-family: Arial, Helvetica, sans-serif;width: 100%;margin-top: 0;">
+    
+    <div class="wrapper">
+        <!-- HTML CHO PHAN MENU -->
+        <div class="menu">
+            <div class="menu_list">
+                <ul class="menu_list-left">
+                    <li><a href="">
+                        <img src="https://purepng.com/public/uploads/large/purepng.com-nike-logologobrand-logoiconslogos-251519940082eoxxs.png"></a>
+                    </li>
+                    <li><a href="">Giỏ hàng</a></li>
+                    <li>
+                        <a href="">
+                            Danh mục
+                            <i class="hello fa-solid fa-caret-down"></i>
+
+                        </a>
+                        <div class="box-submenu">
+                            <ul>
+                                <li><a href="">Sản phẩm bán chạy</a></li>
+                                <li><a href="">Sản phẩm mới nhất</a></li>
+                                <div class="hihi">
+                                    <li><a href="#">Tất cả sản phẩm</a></li>
+                                </div>
+                               
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li>
+                        <div class="search-text">
+                            <input type="search" name="Tìm kiếm" placeholder="Tìm kiếm.. ">
+                            <a href="#" class="search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul style="float: right;" class="menu_list-right">
+                    <li><a href="LOGIN.HTML">Đăng nhập</a></li>
+                    <li><a href="signup.HTML">Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- HTML CHO PHAN SLIDER -->
+        <div class="main">
+            <div class="main-content">
+                <div class="slideshow-container">
+                    
+                    <div class="slide fade">
+                        <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1425,c_limit/b0c441b1-0d5a-43dc-96cd-3699688fb1a3/nike-just-do-it.jpg"
+                            alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1425,c_limit/8fdcffd8-edc9-4adb-b5b8-fcb00f41b93d/nike-just-do-it.png"
+                            alt="">
+                    </div>
+                    <div class="slide fade">
+                        <img src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_1421,c_limit/7a71fd99-88d0-4af1-9a76-d75b43965c9a/men-s-shoes-clothing-accessories.jpg"
+                            alt="">
+                    </div>
+                    <br>
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+                        function showSlides()
+                        {
+                            let slides = document.getElementsByClassName("slide");
+
+                            for (let i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+
+                            slideIndex++;
+
+                            if (slideIndex > slides.length) {
+                                slideIndex = 1;
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            setTimeout(showSlides, 2000); // Thay đổi hình sau mỗi 2 giây
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="product">
+            <div class="bestseller_product">
+                <div class="title">
+                    <h2 >Sản phẩm bán chạy</h2>
+                </div>
+                <div class="product-frame">
+                    <ul class="product-list">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-force-1-07-shoes-WrLlWX/CW2288-111">
+                                <img 
+                                src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-shoes-WrLlWX.png">
+                                <h5 class="title_product">NIKE AIR FORCE 1'07</h5>
+                                <h5 class="price_product">Giá: 2.929.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-max-systm-shoes-LWh69T/FN7441-025">
+                                <img 
+                                src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/85d5638e-da57-4b40-8279-fc9b33621053/air-max-systm-shoes-LWh69T.png">
+                                <h5 class="title_product"> NIKE AIR MAX SYSTM</h5>
+                                <h5 class="price_product">Giá: 2.779.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/waffle-debut-shoes-JRWJk7/DH9522-001">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/26dd42ea-4c98-455e-ab53-e74db2fb1de2/waffle-debut-shoes-JRWJk7.png">
+                                <h5 class="title_product"> NIKE WAFFLE DEBUT</h5>
+                                <h5 class="price_product">Giá: 2.069.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-max-ap-shoes-3Rdq04/CU4826-002">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b43be1c-6784-41d2-a4b1-170610cce90e/air-max-ap-shoes-3Rdq04.png">
+                                <h5 class="title_product"> NIKE AIR MAX AP</h5>
+                                <h5 class="price_product">Giá: 2.929.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-force-1-07-shoes-G4VDWz/FN7439-133">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/220a9e95-2e4e-48ab-87af-6e1e914e3c04/air-force-1-07-shoes-G4VDWz.png">
+                                <h5 class="title_product"> NIKE AIR FORCE 1'07</h5>
+                                <h5 class="price_product">Giá: 3.239.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/dunk-low-retro-shoes-GcxjPd/FD6923-100">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2d6c7eec-b3e0-481b-acdc-5d6d1d975899/dunk-low-retro-shoes-GcxjPd.png">
+                                <h5 class="title_product"> NIKE DUNK LOW RETRO</h5>
+                                <h5 class="price_product">Giá: 2.929.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <!-- <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/jordan-one-take-4-pf-shoes-v5trdl/DZ3339-100">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0a3e7846-fdab-4cf8-becf-638ec3ad9d3d/jordan-one-take-4-pf-shoes-v5trdl.png">
+                                <h5 class="title_product"> Jordan One Take 4 PF</h5>
+                                <h5 class="price_product">Giá: 2.929.000 VNĐ</h5>
+                            </a>
+                        </li> -->
+                        <!-- <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-pegasus-89-shoes-Jh7lxZ/FN6838-012">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9dadce8a-77aa-4317-8713-63d820c0dac9/air-pegasus-89-shoes-Jh7lxZ.png">
+                                <h5 class="title_product">Nike Air Pegasus '89 Premium</h5>
+                                <h5 class="price_product">Giá: 3.239.000 VNĐ</h5>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="new_product">
+                <div class="title">
+                    <h2>Sản phẩm mới nhất</h2>
+                </div>
+
+                <div class="product-frame">
+                    <ul class="product_list">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/e-series-1-shoes-j57hxR/DR5670-300">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/81b4f254-915f-478b-8113-0fb6ed0fe96f/e-series-1-shoes-j57hxR.png">
+                                <h5 class="title_product"> NIKE E-SERIES 1.0</h5>
+                                <h5 class="price_product">Giá: 2.929.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/tatum-1-home-team-pf-basketball-shoes-JbXhDt/DZ3330-108">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a18bc7b-c588-454d-9bf8-dd3e19f3494b/tatum-1-home-team-pf-basketball-shoes-JbXhDt.png">
+                                <h5 class="title_product"> TATUM 1'HOME TEAM' PF</h5>
+                                <h5 class="price_product">Giá: 3.519.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-max-270-shoes-2V5C4p/AH8050-003">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fb7a0c9b-85d3-45b1-a450-75cce3367ed2/air-max-270-shoes-2V5C4p.png">
+                                <h5 class="title_product"> NIKE AIR MAX 270</h5>
+                                <h5 class="price_product">Giá: 4.409.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/kd16-ep-basketball-shoes-ZX0HSQ/DV2916-002">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e3c549c7-0a3f-4ac2-b769-2f0ce8b26839/kd16-ep-basketball-shoes-ZX0HSQ.png">
+                                <h5 class="title_product"> KD16 EP</h5>
+                                <h5 class="price_product">Giá: 4.409.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-max-1-shoes-h0SzNM/DZ2628-001">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/21c3babe-60fb-46fb-8327-319c21107f37/air-max-1-shoes-h0SzNM.png">
+                                <h5 class="title_product"> NIKE AIR MAX 1</h5>
+                                <h5 class="price_product">Giá: 4.109.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/defy-all-day-training-shoe-LtD2G1/DJ1196-104">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5e15e69f-31a6-4230-832d-99130b5993fc/defy-all-day-training-shoe-LtD2G1.png">
+                                <h5 class="title_product"> NIKE DEFY ALL DAY</h5>
+                                <h5 class="price_product">Giá: 1.909.000 VNĐ</h5>
+                            </a>
+                        </li>
+                        <!-- <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-max-97-se-shoes-TlGwpt/FB9619-001">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c5100c91-fc49-4089-be77-89b8031b85a1/air-max-97-se-shoes-TlGwpt.png">
+                                <h5 class="title_product"> NIKE AIR MAX 97 SE</h5>
+                                <h5 class="price_product">Giá: 5.279.000 VNĐ</h5>
+                            </a>
+                        </li> -->
+                        <!-- <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/dunk-low-shoes-Knf0qX/FV0384-001">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/49994138-c049-4ce4-a670-c42efd06ade4/dunk-low-shoes-Knf0qX.png">
+                                <h5 class="title_product"> NIKE DUNK LOW</h5>
+                                <h5 class="price_product">Giá: 3.829.000 VNĐ</h5>
+                            </a>
+                        </li>   -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="all_products">
+            <div class="title">
+                <h2>Tất cả sản phẩm</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> 
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-force-1-07-shoes-WrLlWX/CW2288-111">
+                                <img 
+                                src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-shoes-WrLlWX.png">
+                                <h5 class="title_product">NIKE AIR FORCE 1'07</h5>
+                                <h5 class="price_product">Giá: 2.929.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                  
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-max-systm-shoes-LWh69T/FN7441-025">
+                                <img 
+                                src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/85d5638e-da57-4b40-8279-fc9b33621053/air-max-systm-shoes-LWh69T.png">
+                                <h5 class="title_product"> NIKE AIR MAX SYSTM</h5>
+                                <h5 class="price_product">Giá: 2.779.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/waffle-debut-shoes-JRWJk7/DH9522-001">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/26dd42ea-4c98-455e-ab53-e74db2fb1de2/waffle-debut-shoes-JRWJk7.png">
+                                <h5 class="title_product"> NIKE WAFFLE DEBUT</h5>
+                                <h5 class="price_product">Giá: 2.069.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-max-ap-shoes-3Rdq04/CU4826-002">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4b43be1c-6784-41d2-a4b1-170610cce90e/air-max-ap-shoes-3Rdq04.png">
+                                <h5 class="title_product"> NIKE AIR MAX AP</h5>
+                                <h5 class="price_product">Giá: 2.929.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-force-1-07-shoes-G4VDWz/FN7439-133">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/220a9e95-2e4e-48ab-87af-6e1e914e3c04/air-force-1-07-shoes-G4VDWz.png">
+                                <h5 class="title_product"> NIKE AIR FORCE 1'07</h5>
+                                <h5 class="price_product">Giá: 3.239.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/dunk-low-retro-shoes-GcxjPd/FD6923-100">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2d6c7eec-b3e0-481b-acdc-5d6d1d975899/dunk-low-retro-shoes-GcxjPd.png">
+                                <h5 class="title_product"> NIKE DUNK LOW RETRO</h5>
+                                <h5 class="price_product">Giá: 2.929.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/e-series-1-shoes-j57hxR/DR5670-300">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/81b4f254-915f-478b-8113-0fb6ed0fe96f/e-series-1-shoes-j57hxR.png">
+                                <h5 class="title_product"> NIKE E-SERIES 1.0</h5>
+                                <h5 class="price_product">Giá: 2.929.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/tatum-1-home-team-pf-basketball-shoes-JbXhDt/DZ3330-108">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7a18bc7b-c588-454d-9bf8-dd3e19f3494b/tatum-1-home-team-pf-basketball-shoes-JbXhDt.png">
+                                <h5 class="title_product"> TATUM 1'HOME TEAM' PF</h5>
+                                <h5 class="price_product">Giá: 3.519.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-max-270-shoes-2V5C4p/AH8050-003">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fb7a0c9b-85d3-45b1-a450-75cce3367ed2/air-max-270-shoes-2V5C4p.png">
+                                <h5 class="title_product"> NIKE AIR MAX 270</h5>
+                                <h5 class="price_product">Giá: 4.409.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/kd16-ep-basketball-shoes-ZX0HSQ/DV2916-002">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e3c549c7-0a3f-4ac2-b769-2f0ce8b26839/kd16-ep-basketball-shoes-ZX0HSQ.png">
+                                <h5 class="title_product"> KD16 EP</h5>
+                                <h5 class="price_product">Giá: 4.409.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/air-max-1-shoes-h0SzNM/DZ2628-001">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/21c3babe-60fb-46fb-8327-319c21107f37/air-max-1-shoes-h0SzNM.png">
+                                <h5 class="title_product"> NIKE AIR MAX 1</h5>
+                                <h5 class="price_product">Giá: 4.109.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div> 
+                    <div class="swiper-slide">
+                        <li class="image-frame">
+                            <a href="https://www.nike.com/vn/t/defy-all-day-training-shoe-LtD2G1/DJ1196-104">
+                                <img
+                                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5e15e69f-31a6-4230-832d-99130b5993fc/defy-all-day-training-shoe-LtD2G1.png">
+                                <h5 class="title_product"> NIKE DEFY ALL DAY</h5>
+                                <h5 class="price_product">Giá: 1.909.000 VNĐ</h5>
+                            </a>
+                        </li>
+                    </div> 
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+        <!-- swiper cho phan tat ca san pham -->
+          <!-- Swiper -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      spaceBetween: 10,
+        //loop:true,
+        speed:1000,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>  
+    <footer class="footer">
+        <div class="info-container">
+            <div class="info-container-left">
+                <div class="info-container-left-section">
+                    <ul>FIND A STORE</ul>
+                    <ul>BECOME A MEMBER</ul>
+                    <ul>Send Us Feedback</ul>
+                </div>
+                <div class="info-container-left-section">
+                    <ul>GET HELP
+                        <li>Order Status</li>
+                        <li>Delivery</li>
+                        <li>Returns</li>
+                        <li>Payment</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="info-container-left-section">
+                    <ul>ABOUT NIKE
+                        <li>News</li>
+                        <li>Careers</li>
+                        <li>Investors</li>
+                        <li>Sustainability</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-container-right">
+                <div class="info-container-right-icons">
+                    <li>
+                        <a href="https://www.facebook.com/nike">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/nike">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Nike">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/nike/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="info-container-2">
+            <div class="info-container-2-left">
+                
+                <!-- <h5 class="chuvietnam">
+                    <li> <i class="fa-solid fa-location-dot"></i></li>
+                    <li>Vietnam</li>
+                    <ul></ul>
+                    style="color: #ccc; font-size: 13px; margin-left: 40px; margin-top:80px;
+                </h5> -->
+                <!-- <h4>Vietnam</h4> -->
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Vietnam</h4>
+                <h5>© 2023 Nike, Inc. All Rights Reserved</h5>
+            </div>
+            <div class="info-container-2-right">
+                <li>Guides</li>
+                <li>Term of Sale</li>
+                <li>Terms of Use </li>
+                <li>Nike Privacy Policy</li>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+</body>
+</html>

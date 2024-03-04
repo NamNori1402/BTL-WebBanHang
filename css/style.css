@@ -1,0 +1,461 @@
+/* thiet ke css menu */
+
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul
+{
+    list-style: none;
+}
+/*
+tu ngoai vao trong
+tu tren xuong duoi
+tong quan den chi tiet
+
+ */
+/* 1.Vi tri
+    2.Kich thuoc
+    3.Mau sac
+    3. Kieu dang(kieu chu tron,vuong) */
+
+
+.menu
+{
+    /* lam phan dau */
+    background-color:white;
+    height: 50px;
+    width: 100%;
+    margin-left: 0px;
+    border-top-left-radius:  0px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+
+
+}
+.menu_list-left img
+{
+    /* chinh kich thuoc cho chu nike dau dong */
+    height: auto;
+    width: 60px;
+    display: block;
+    padding-left: 20px;
+    line-height: 50px;
+}
+.menu_list-left,.menu_list-right
+{
+    list-style-type:none;
+    display: inline-block;
+    line-height: 50px;
+    /* su dung chieu cao cua menu */
+}
+/* dat cac muc nam ngang */
+.menu_list-left li,.menu_list-right li{
+    display: inline-block;
+    margin-right: 35px;
+    /* khoang cach giua cac muc menu */
+
+}
+/* css cho dau mui ten di xuong */
+.menu_list-left .hello
+{
+    font-size: 16px;
+}
+
+/* an hien menu con */
+.box-submenu
+{
+    display: none;
+}
+.menu ul li:hover .box-submenu
+{
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 10 px;
+    margin-left: -10px;
+}
+.menu_list-left li
+{
+    position: relative;
+}
+.menu_list-left .box-submenu li
+{
+    display: block;
+}
+.menu_list-left .box-submenu a:hover
+{
+    color: black;
+    text-align: center;
+    padding-inline: 5px 10px;
+    border-radius: 5px;
+    
+    transition: transform 0.3s;
+    /* tạo khoảng cách xung quanh liên kết */
+}
+.menu ul li:hover .box-submenu ul{
+    display:block;
+}
+.box-submenu ul li a
+{
+    padding: 2px; 
+    font-size: 18px ;
+    display: block;
+    
+    /* text-align: center; */
+}
+
+.box-submenu .hihi
+{
+    margin-left: -15px;
+}
+
+
+.menu ul li:hover .box-submenu ul li 
+{
+    width: 200px;
+    
+    text-align: left;
+    position: relative;
+    background: transparent;
+}
+
+/* thiet ke chu cho phan menu */
+.menu_list-left a,
+.menu_list-right a{
+    text-decoration: none;
+    font-size: 16px;
+    /* kich thuoc chu */
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    /* mau chu */
+    transition: transform 0.3s;
+    /* thêm hiệu ứng  chuyển động độ trễ 0.3s*/
+
+}
+/* Màu nền khi di chuột qua menu */
+.menu_list-left > li:hover ,
+.menu_list-right > li:hover 
+{
+    color: black;
+    background-color: honeydew;
+
+    /* tạo khoảng cách xung quanh liên kết */
+    border-radius: 5px;
+    
+    transition: transform 0.3s;
+}
+/* thanh tim kiem tren header */
+.search-text
+{
+    width: 140px;
+    
+    background-color: none;
+    border: 0.5px solid none bisque;
+    border-radius:10px ;
+    padding-left: 10px;
+   
+}
+.search-text input
+{
+    height: 35px;
+    width: 70%;
+    border: none;
+    padding-left: 10px;
+    
+    
+}
+.search-btn
+{
+    float: right;
+    width: auto;
+    height: 35px;
+    margin-right: 20px;
+    text-align: center;
+}
+.search-text input:focus,.search-text input:active, .search-text input
+{
+    outline: 0;
+    outline-style: none;
+    outline-width: 0;
+    border-radius: 10px 0px 0px 10px;
+}
+/* .main .main-content
+{
+    height: 2000px;
+    background-color:red;
+    
+} */
+/* css cho phan slider */
+.slideshow-container {
+    /* Điều chỉnh kích thước của slideshow */
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.slide {
+    display: none;
+    /* Ẩn tất cả các slide ban đầu */
+}
+.slide img {
+    width: 100%;
+    height: 600px;
+}
+/* css cho phan product */
+.product
+{
+    text-align: center;
+    list-style-type:none;
+    text-decoration: none;
+}
+.product .title
+{
+    text-align: center;
+    margin-top:  15px;
+    margin-bottom: 10px;
+}
+.product-list,.new_product .product-frame .product_list,
+.all_product .product-frame .product_list
+{
+    list-style: none;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.image-frame {
+    border: 10px solid #ccc;
+    /* Định dạng đường viền */
+    padding: 15px;
+    /* Tạo khoảng cách giữa ảnh và đường viền */
+    /* hien thi 4 anh tren 1 dong  100/4*/
+    flex-basis:25%; 
+    text-align: center;
+    /* Căn giữa nội dung bên trong */
+    margin-right: 0%;
+    /*Khoảng cách giữa các khung*/
+    background-color: #EEE;
+    margin-top: 10px;
+    
+}
+.image-frame img {
+    max-width: 100%;
+    /* Đảm bảo ảnh không vượt quá khung */
+    /* display: block; */
+    height: auto;
+    /* Loại bỏ khoảng trắng dư thừa dưới ảnh */
+   
+    /* Căn giữa ảnh bên trong khung */
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi với độ trễ 0.3s*/
+}
+.image-frame:hover img {
+    padding: 5px ;
+}
+.title_product,.price_product
+{
+    color:black;
+    margin: 5px;
+    
+}
+a
+{
+    text-decoration: none;
+}
+
+
+.title_product:hover,.price_product:hover
+{
+   color: red;
+}
+
+/* css cho swipper */
+
+
+.all_products .title
+{
+    text-align: center;
+    margin-top:  15px;
+    margin-bottom: 10px;
+}
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    /* background: #fff; */
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  .swiper-slide img {
+    display:block ;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+    
+  }
+  .swiper-pagination
+  {
+    display: none;
+  }
+/* css cho phan footer */
+.footer
+{
+    /* mau nen cua footer */
+    background-color:black;
+    /* mau chu */
+    color: white;
+    margin-top:50px ;
+    padding: 50px;
+    width: 100%;
+    height: 350px;
+    
+}
+.info-container-2,
+.info-container
+{
+    display: flex;
+    justify-content: space-between; /* Chia thành hai phần bằng nhau */
+    
+}
+/* css cho phan chu viet nam */
+.info-container-2-left,
+.info-container-2-right,
+.info-container-left, 
+.info-container-right {
+    flex: 1; /* Chia đều không gian cho mỗi phần */
+}
+.info-container-2-left
+{
+    display: flex;
+}
+.info-container-2-left i
+{
+    margin-top: 80px;
+    margin-left: 0px;
+    color: white;
+}
+.info-container-2-left h4
+{
+    margin-top: 80px;
+    margin-left: 10px;
+    color: white;
+}
+.info-container-2-left h5
+{
+    margin-top: 80px;
+    margin-left: 40px;
+    color: #ccc;
+    font-size: 13px;
+}
+.info-container-2-right
+{
+    display: flex;
+    /* text-align: center; */
+    
+    color: #ccc;
+    font-size: 13px;
+    margin-left: 600px;
+    margin-top: 80px;
+    list-style-type:none ;
+
+
+}
+.info-container-2-right li
+{
+    margin-left: 20px;
+
+}
+
+.info-container-left { /*Chia đều 3 cột*/
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.info-container-left-section {
+    flex: 1; /* Chia đều không gian cho mỗi phần */
+    
+}
+.info-container-left ul {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.info-container-left li {
+    font-size: 13px;
+    margin-top: 15px;
+    color: #ccc;
+}
+.info-container-right-icons
+{
+    margin-left:350px ;
+}
+.info-container-right-icons  li  {
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    /* padding: 20px;
+    font-size: px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 15px; */
+
+}
+
+.info-container-right-icons i
+{
+    color:grey;
+    font-size: 30px;
+}
+/* css hover cho icon */
+.info-container-right-icons i:hover
+{
+    color: white;
+}
+/* css hovev cho chu nho */
+.info-container-left li:hover
+{
+    color: white;
+}
+/* css cho phan chu ben duoi cung ben phai */
+.info-container-2-right li:hover
+{
+    color: white;
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+
